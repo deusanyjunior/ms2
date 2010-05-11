@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package dados;
 
 import java.io.Serializable;
@@ -19,26 +14,41 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Administrador
+ * @author Carlos Peixoto Mangueira Júnior
  */
 @Entity
 @Table(name="periodo")
 public class Periodo implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * Identificador da entidade Periodo
+     */
     @Id @GeneratedValue
     @Column(name="id_periodo")
     private Long id;
 
+    /**
+     * Nome do periodo
+     */
     @Column(name="nome")
     private String nome;
 
+    /**
+     * Data de inicio do periodo
+     */
     @Column(name="data_inicio")
     private Date dataInicio;
 
+    /**
+     * Data do fim do periodo
+     */
     @Column(name="data_fim")
     private Date dataFim;
 
+    /**
+     * Conjunto de turmas deste periodo
+     */
     @OneToMany
     @JoinTable(
         name="turma_periodo",
@@ -47,6 +57,9 @@ public class Periodo implements Serializable {
     )
     private Set<Turma> turmas;
 
+    /**
+     * Conjunto de boletos deste periodo
+     */
     @OneToMany(mappedBy="periodo")
     private Set<Boleto> boletos;
 

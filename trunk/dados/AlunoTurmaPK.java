@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 
 /**
  *
- * @author Carlos
+ * @author Carlos Peixoto Mangueira Júnior
  */
 @Embeddable
 public class AlunoTurmaPK implements Serializable {

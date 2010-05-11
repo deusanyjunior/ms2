@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package dados;
 
 import java.io.Serializable;
@@ -20,23 +15,35 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Administrador
+ * @author Carlos Peixoto Mangueira Júnior
  */
 @Entity
 @Table(name="turma")
 public class Turma implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * Identificador da entidade Turma
+     */
     @Id @GeneratedValue
     @Column(name="id_turma")
     private Long id;
 
+    /**
+     * Número para identificar a turma
+     */
     @Column(name="numero")
     private Integer numero;
 
+    /**
+     * Número da sala da turma
+     */
     @Column(name="sala")
     private Integer sala;
 
+    /**
+     * Conjunto de horarios para esta turma
+     */
     @ManyToMany
     @JoinTable(
         name="turma_horario",
@@ -45,12 +52,21 @@ public class Turma implements Serializable {
     )
     private Set<Horario> horarios;
 
+    /**
+     * Disciplina referente a esta turma
+     */
     @ManyToOne
     private Disciplina disciplina;
 
+    /**
+     * Professor desta turma
+     */
     @ManyToOne
     private Professor professor;
 
+    /**
+     * Conjunto de provas desta turma
+     */
     @OneToMany
     @JoinTable(
         name="turma_prova",
@@ -59,6 +75,9 @@ public class Turma implements Serializable {
     )
     private Set<Prova> provas;
 
+    /**
+     * Periodo desta turma
+     */
     @ManyToOne
     private Periodo periodo;
     

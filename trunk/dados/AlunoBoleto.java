@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package dados;
 
 import java.io.Serializable;
@@ -14,16 +9,22 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Administrador
+ * @author Carlos Peixoto Mangueira Júnior
  */
 @Entity
 @Table(name="aluno_boleto")
 public class AlunoBoleto implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * Chave composta pelos ids de Aluno e Boleto
+     */
     @EmbeddedId
     private AlunoBoletoPK chaveComposta;
 
+    /**
+     * Data em que o boleto foi pago
+     */
     @Column(name="data_pagamento")
     private Date dataPagamento;
 }

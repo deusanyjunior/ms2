@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package dados;
 
 import java.io.Serializable;
@@ -20,6 +15,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
+ * Classe utilizada para representar a entidade Aluno que contem dados cadastrais
+ * do Aluno
  *
  * @author Carlos Peixoto Mangueira Júnior
  */
@@ -28,40 +25,76 @@ import javax.persistence.Table;
 public class Aluno implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * Identificador da entidade Aluno
+     */
     @Id @GeneratedValue
     @Column(name="id_aluno")
     private Long id;
 
+    /**
+     * Nome do aluno. Obs deve ser unico e não pode ser nulo
+     */
     @Column(name="nome", nullable=false, unique=true)
     private String nome;
 
+    /**
+     * CPF do Aluno. Deve ser unico e diferente de nulo. Composto de 11 digitos
+     */
     @Column(name="cpf", length=11, nullable=false, unique=true)
     private String cpf;
 
+    /**
+     * Matricula do Aluno. Ainda necessita de um metodo de geração de matriculas
+     */
     @Column(name="matricula", nullable=false, unique=true)
     private String matricula;
 
+    /**
+     * Endereço do Aluno, composto apenas do logradouro e numero do imovel
+     */
     @Column(name="endereco")
     private String endereco;
 
+    /**
+     * Bairro correspondente ao endereço do Aluno
+     */
     @Column(name="bairro")
     private String bairro;
 
-    @Column(name="cidade")
+    /**
+     * Cidade do Aluno
+     */
+    @Column(name="cidade", nullable=false)
     private String cidade;
 
+    /**
+     * CEP do aluno. Composto de 8 digitos
+     */
     @Column(name="cep", length=8)
     private String cep;
 
+    /**
+     * Data de nascimento do Aluno
+     */
     @Column(name="data_nascimento")
     private Date nascimento;
 
+    /**
+     * Telefone residencial do Aluno
+     */
     @Column(name="fone", length=10)
     private String telefone;
 
+    /**
+     * Telefone celular do Aluno
+     */
     @Column(name="celular", length=10)
     private String celular;
 
+    /**
+     * E-mail do Aluno
+     */
     @Column(name="email")
     private String email;
 
