@@ -16,26 +16,41 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Administrador
+ * @author Carlos Peixoto Mangueira Júnior
  */
 @Entity
 @Table(name="horario")
 public class Horario implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * Identificador da entidade Horario
+     */
     @Id @GeneratedValue
     @Column(name="id_horario")
     private Long id;
 
+    /**
+     * Hora que começa a aula
+     */
     @Column(name="hora_inicio", nullable=false)
     private Integer horaInicio;
 
+    /**
+     * Hora que termina a aula
+     */
     @Column(name="hora_fim", nullable=false)
     private Integer horaFim;
 
+    /**
+     * Dia da semana (Segunda, Terça, Quarta, Quinta, Sexta, Sábado, Domingo)
+     */
     @Column(name="dia", nullable=false)
     private String dia;
 
+    /**
+     * Conjunto de turmas que tem este horário
+     */
     @ManyToMany(mappedBy="horarios")
     private Set<Turma> turmas;
 

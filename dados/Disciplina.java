@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package dados;
 
 import java.io.Serializable;
@@ -19,27 +14,43 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 /**
+ * 
  *
- * @author Administrador
+ * @author Carlos Peixoto Mangueira Júnior
  */
 @Entity
 @Table(name="disciplina")
 public class Disciplina implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * Identificador da entidade Disciplina
+     */
     @Id @GeneratedValue
     @Column(name="id_disciplina")
     private Long id;
 
+    /**
+     * Nome da disciplina. Deve ser único e diferente de nulo
+     */
     @Column(name="nome", nullable=false, unique=true)
     private String nome;
 
+    /**
+     * Numero de horas-aula da disciplina
+     */
     @Column(name="creditos")
     private Integer creditos;
 
+    /**
+     * Nivel da disciplina
+     */
     @Column(name="nivel")
     private Integer nivel;
-    
+
+    /**
+     * Conjunto de instrumentos que estão associadas a esta disciplina
+     */
     @ManyToMany
     @JoinTable(
         name="disciplina_instrumento",
@@ -48,6 +59,9 @@ public class Disciplina implements Serializable {
     )
     private Set<Instrumento> instrumentos;
 
+    /**
+     * Tipo de disciplina
+     */
     @ManyToOne
     @JoinTable(
         name="disciplina_tipo_diciplina",
@@ -56,9 +70,15 @@ public class Disciplina implements Serializable {
     )
     private TipoDisciplina tipo;
 
+    /**
+     * Conjunto de professores que ministram esta disciplina
+     */
     @ManyToMany(mappedBy="ministradas")
     private Set<Professor> professores;
 
+    /**
+     * Conjunto de turmas que estão associadas a esta disciplina
+     */
     @OneToMany
     @JoinTable(
         name="disciplina_turma",

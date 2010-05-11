@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package dados;
 
 import java.io.Serializable;
@@ -16,20 +11,29 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Administrador
+ * @author Carlos Peixoto Mangueira Júnior
  */
 @Entity
 @Table(name="tipo_disciplina")
 public class TipoDisciplina implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * Identificador da entidade TipoDisciplina
+     */
     @Id @GeneratedValue
     @Column(name="id_tipo_disciplina")
     private Long id;
 
+    /**
+     * Nome do tipo da disciplina
+     */
     @Column(name="nome_tipo", nullable=false, unique=true)
     private String nome;
 
+    /**
+     * Conjunto de disciplinas que contem este tipo
+     */
     @OneToMany(mappedBy="tipo")
     private Set<Disciplina> disciplinas;
 

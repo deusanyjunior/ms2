@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package dados;
 
 import java.io.Serializable;
@@ -16,20 +11,29 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Administrador
+ * @author Carlos Peixoto Mangueira Júnior
  */
 @Entity
 @Table(name="tipo_prova")
 public class TipoProva implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * Identificador da entidade TipoProva
+     */
     @Id @GeneratedValue
     @Column(name="id_tipo_prova")
     private Long id;
 
+    /**
+     * Nome do tipo da prova
+     */
     @Column(name="nome")
     private String nome;
 
+    /**
+     * Conjunto de provas que possuem este tipo
+     */
     @OneToMany(mappedBy="tipo")
     private Set<Prova> provas;
 

@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package dados;
 
 import java.io.Serializable;
@@ -16,26 +11,41 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Administrador
+ * @author Carlos Peixoto Mangueira Júnior
  */
 @Entity
 @Table(name="instrumento")
 public class Instrumento implements Serializable {
     private static final long serialVersionUID = 1L;
-    
+
+    /**
+     * Identificador da entidade Instrumento
+     */
     @Id @GeneratedValue
     @Column(name="id_instrumento")
     private Long id;
 
+    /**
+     * Nome do instrumento
+     */
     @Column(name="nome", nullable=false, unique=true)
     private String nome;
 
+    /**
+     * Conjunto de disciplinas que esta associada a este instrumento
+     */
     @ManyToMany(mappedBy="instrumentos")
     private Set<Disciplina> disciplinas;
 
+    /**
+     * Conjunto de alunos que estão associados a este instrumento
+     */
     @ManyToMany(mappedBy="instrumentos")
     private Set<Aluno> alunos;
 
+    /**
+     * Conjunto de professores que estão associados a este instrumento
+     */
     @ManyToMany(mappedBy="instrumentos")
     private Set<Professor> professores;
 

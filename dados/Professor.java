@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package dados;
 
 import java.io.Serializable;
@@ -19,26 +14,41 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Administrador
+ * @author Carlos Peixoto Mangueira Júnior
  */
 @Entity
 @Table(name="professor")
 public class Professor implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    /**
+     * Identificador da entidade Professor
+     */
     @Id @GeneratedValue
     @Column(name="id_professor")
     private Long id;
 
+    /**
+     * Nome do professor. Deve ser unico e diferente de nulo
+     */
     @Column(name="nome", nullable=false, unique=true)
     private String nome;
 
+    /**
+     * CPF do professor. Deve ser unico, diferente de nulo e composto de 11 digitos
+     */
     @Column(name="cpf", length=11, nullable=false, unique=true)
     private String cpf;
 
+    /**
+     * E-mail do professor
+     */
     @Column(name="email")
     private String email;
-    
+
+    /**
+     * Conjunto de disciplinas ministradas pelo professor
+     */
     @ManyToMany
     @JoinTable(
         name="professor_disciplina",
@@ -47,6 +57,9 @@ public class Professor implements Serializable {
     )
     private Set<Disciplina> ministradas;
 
+    /**
+     * Conjunto de instrumentos que estão associados a este professor
+     */
     @ManyToMany
     @JoinTable(
         name="professor_instrumento",
@@ -55,6 +68,9 @@ public class Professor implements Serializable {
     )
     private Set<Instrumento> instrumentos;
 
+    /**
+     * Conjunto de turmas ensinadas por este professor
+     */
     @OneToMany
     @JoinTable(
         name="professor_turma",

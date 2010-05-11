@@ -1,8 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package dados;
 
 import java.io.Serializable;
@@ -16,17 +11,23 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Administrador
+ * @author Carlos Peixoto Mangueira Júnior
  */
 @Entity
 @Table(name="boleto")
 public class Boleto implements Serializable {
     private static final long serialVersionUID = 1L;
-    
+
+    /**
+     * Identificador da entidade Boleto
+     */
     @Id @GeneratedValue
     @Column(name="id_boleto")
     private Long id;
 
+    /**
+     * Valor em Reais do Boleto
+     */
     @Column(name="valor", precision=2)
     private Float valor;
 

@@ -13,7 +13,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Carlos
+ * @author Carlos Peixoto Mangueira Júnior
  */
 @Entity
 @Table(name="aluno_turma")
