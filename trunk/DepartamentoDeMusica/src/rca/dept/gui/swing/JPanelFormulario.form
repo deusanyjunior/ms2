@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jLabelFuncao1" max="32767" attributes="1"/>
+                  <Component id="jLabelNome" alignment="1" max="32767" attributes="1"/>
+                  <Component id="jLabelEndereco" alignment="1" pref="58" max="32767" attributes="1"/>
+                  <Component id="jLabelNascimento" alignment="1" pref="58" max="32767" attributes="1"/>
+                  <Component id="jLabelCPF" alignment="1" pref="58" max="32767" attributes="1"/>
+                  <Component id="jLabelCidade" alignment="0" pref="58" max="32767" attributes="1"/>
+                  <Component id="jLabelFuncao" alignment="0" pref="58" max="32767" attributes="1"/>
+              </Group>
+              <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jComboBoxFuncao" min="-2" pref="130" max="-2" attributes="1"/>
+                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabelAviso" pref="405" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jTextFieldNome" alignment="0" pref="540" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jTextFieldCPF" min="-2" pref="121" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <Component id="jLabelRG" min="-2" pref="18" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      <Component id="jTextFieldRG" pref="111" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jLabelOrgao" min="-2" pref="38" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                      <Component id="jTextFieldOrgao" pref="221" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="jTextFieldEndereco" alignment="0" pref="540" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jTextFieldCidade" pref="138" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                      <Component id="jComboBox1" min="-2" pref="64" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <Component id="jLabelBairro" min="-2" pref="38" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      <Component id="jTextFieldBairro" pref="137" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <Component id="jLabelCEP" min="-2" pref="23" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      <Component id="jTextFieldCEP" min="-2" pref="90" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jComboBoxThemes" min="-2" pref="130" max="-2" attributes="1"/>
+                      <EmptySpace pref="310" max="32767" attributes="0"/>
+                      <Component id="jButtonRegistrar" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jTextFieldNascimento" pref="115" max="32767" attributes="2"/>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <Component id="jLabelTelefone" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      <Component id="jTextFieldTelefone" pref="143" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                      <Component id="jLabelCelular" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
+                      <Component id="jTextFieldCelular" pref="144" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" max="-2" attributes="0">
+              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jTextFieldNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelNome" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelCPF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldCPF" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldOrgao" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelRG" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldRG" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelOrgao" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="jTextFieldEndereco" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelEndereco" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" max="-2" attributes="0">
+                  <Component id="jLabelCidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldCidade" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldBairro" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelBairro" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldCEP" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCEP" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabelNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldNascimento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldCelular" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelCelular" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextFieldTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelTelefone" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="2" attributes="0">
+                  <Component id="jComboBoxFuncao" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelFuncao" alignment="2" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelAviso" alignment="2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jButtonRegistrar" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jComboBoxThemes" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabelFuncao1" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabelNome">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nome"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldNome">
+      <Events>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="jTextFieldNomeFocusGained"/>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="someFieldFocusLost"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelEndereco">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Endere&#xe7;o"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldEndereco">
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="someFieldFocusLost"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelCidade">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cidade"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldCidade">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Jo&#xe3;o Pessoa"/>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="someFieldFocusLost"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelBairro">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="JLabel.RIGHT" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Bairro"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldBairro">
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="someFieldFocusLost"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldCEP">
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="someFieldFocusLost"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextFieldCEPKeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelCEP">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="JLabel.RIGHT" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="CEP"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelCPF">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="CPF"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelOrgao">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="JLabel.RIGHT" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Org&#xe3;o"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldCPF">
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="someFieldFocusLost"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextFieldCPFKeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelRG">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="JLabel.RIGHT" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="RG"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldRG">
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="someFieldFocusLost"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextFieldRGKeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldOrgao">
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="someFieldFocusLost"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelNascimento">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Dt. Nasc."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelCelular">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="JLabel.RIGHT" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Celular"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldNascimento">
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="someFieldFocusLost"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextFieldNascimentoKeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelTelefone">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="JLabel.RIGHT" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Telefone"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldTelefone">
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="someFieldFocusLost"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextFieldTelefoneKeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextFieldCelular">
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="someFieldFocusLost"/>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jTextFieldCelularKeyReleased"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelFuncao">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fun&#xe7;&#xe3;o"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBoxFuncao">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="1">
+            <StringItem index="0" value="Aluno"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="someFieldFocusLost"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButtonRegistrar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Registrar"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonRegistrarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelAviso">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="JLabel.RIGHT" type="code"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;div color=&quot;#FF0000&quot;&gt;Os campos em vermelho est&#xe3;o incompletos ou inv&#xe1;lidos&lt;/div&gt;&lt;html&gt;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBox1">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="27">
+            <StringItem index="0" value="AC"/>
+            <StringItem index="1" value="AL"/>
+            <StringItem index="2" value="AP"/>
+            <StringItem index="3" value="AM"/>
+            <StringItem index="4" value="BA"/>
+            <StringItem index="5" value="CE"/>
+            <StringItem index="6" value="DF"/>
+            <StringItem index="7" value="ES"/>
+            <StringItem index="8" value="GO"/>
+            <StringItem index="9" value="MA"/>
+            <StringItem index="10" value="MT"/>
+            <StringItem index="11" value="MS"/>
+            <StringItem index="12" value="MG"/>
+            <StringItem index="13" value="PA"/>
+            <StringItem index="14" value="PB"/>
+            <StringItem index="15" value="PR"/>
+            <StringItem index="16" value="PE"/>
+            <StringItem index="17" value="PI"/>
+            <StringItem index="18" value="RR"/>
+            <StringItem index="19" value="RO"/>
+            <StringItem index="20" value="RJ"/>
+            <StringItem index="21" value="RN"/>
+            <StringItem index="22" value="RS"/>
+            <StringItem index="23" value="SC"/>
+            <StringItem index="24" value="SP"/>
+            <StringItem index="25" value="SE"/>
+            <StringItem index="26" value="TO"/>
+          </StringArray>
+        </Property>
+        <Property name="selectedItem" type="java.lang.Object" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+          <Connection code="&quot;PB&quot;" type="code"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="jComboBoxThemes">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="1">
+            <StringItem index="0" value="Aluno"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxThemesActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="String[] options = SubstanceLookAndFeel.getAllSkins().keySet().toArray(new String[0]);&#xa;jComboBoxThemes.setModel(new DefaultComboBoxModel(options));&#xa;jComboBoxThemes.setSelectedIndex(1);"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabelFuncao1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tema"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
