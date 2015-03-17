@@ -1,0 +1,1 @@
+A system to control all process of a Music School. The project will help to add students, teachers, instruments and theorical disciplines as well. An "easy to use" interface should help any user to administrate the school without any problem.
